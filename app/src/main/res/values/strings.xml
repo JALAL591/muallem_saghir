@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق المعلم</string>
+    <string name="teacher_dashboard">لوحة التحكم</string>
+    <string name="students">الطلاب</string>
+    <string name="classes">الفصول</string>
+    <string name="points">النقاط</string>
+    <string name="broadcast">بث</string>
+    <string name="settings">الإعدادات</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="server_running">الرادار يعمل</string>
+    <string name="server_stopped">الرادار متوقف</string>
+    <string name="connected_students">الطلاب المتصلون</string>
+</resources>
