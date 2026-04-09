@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/slate_50"
+    android:background="#F8FAFC"
     android:padding="16dp">
 
     <!-- Header -->
@@ -16,132 +15,110 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="32dp">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_launcher"
-            android:layout_marginBottom="16dp" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="تطبيق المعلم"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="@color/indigo_600"
-            android:gravity="center" />
+            android:textColor="#4F46E5"
+            android:layout_marginBottom="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="نظام البث المحلي Offline"
             android:textSize="12sp"
-            android:textColor="@color/slate_800"
-            android:gravity="center" />
+            android:textColor="#1E293B" />
     </LinearLayout>
 
-    <!-- بطاقة حالة السيرفر -->
-    <androidx.cardview.widget.CardView
+    <!-- حالة السيرفر -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="24dp"
-        app:cardElevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#4F46E5"
         android:layout_marginBottom="24dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/serverStatusText"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp"
-            android:background="@color/indigo_600">
+            android:text="⏳ جاري تشغيل الرادار..."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
 
-            <TextView
-                android:id="@+id/serverStatusText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="⏳ جاري تشغيل الرادار..."
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/connectedCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👥 الطلاب المتصلون: 0"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF" />
 
-            <TextView
-                android:id="@+id/connectedCountText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="👥 الطلاب المتصلون: 0"
-                android:textSize="14sp"
-                android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌐 IP: 192.168.43.1:8080"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="🌐 IP: 192.168.43.1:8080"
-                android:textSize="12sp"
-                android:textColor="@color/white" />
-
-        </LinearLayout>
-
-    </androidx.cardview.CardView>
+    </LinearLayout>
 
     <!-- إرشادات -->
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="2dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
         android:layout_marginBottom="24dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:text="📚 إرشادات للمعلم"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#4F46E5"
+            android:layout_marginBottom="12dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="📚 إرشادات للمعلم"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="@color/indigo_600"
-                android:layout_marginBottom="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. افتح الإعدادات ← نقطة اتصال محمولة (Hotspot)"
+            android:textSize="12sp"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="4dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. افتح الإعدادات ← نقطة اتصال محمولة (Hotspot)"
-                android:textSize="12sp"
-                android:textColor="@color/slate_800"
-                android:layout_marginBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. شغّل نقطة البث يدوياً"
+            android:textSize="12sp"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="4dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2. شغّل نقطة البث يدوياً"
-                android:textSize="12sp"
-                android:textColor="@color/slate_800"
-                android:layout_marginBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. أخبر الطلاب بالاتصال بنفس الشبكة"
+            android:textSize="12sp"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="4dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3. أخبر الطلاب بالاتصال بنفس الشبكة"
-                android:textSize="12sp"
-                android:textColor="@color/slate_800"
-                android:layout_marginBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. الطلاب يتصلون بـ ws://192.168.43.1:8080"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#4F46E5" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4. الطلاب يتصلون بـ ws://192.168.43.1:8080"
-                android:textSize="12sp"
-                android:textColor="@color/indigo_600"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-    </androidx.cardview.CardView>
+    </LinearLayout>
 
     <!-- زر البث -->
     <Button
@@ -151,17 +128,7 @@
         android:text="📢 بث درس جديد"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:backgroundTint="@color/indigo_600"
+        android:backgroundTint="#4F46E5"
         android:layout_marginBottom="16dp" />
-
-    <!-- زر الإعدادات -->
-    <Button
-        android:id="@+id/settingsButton"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="⚙️ الإعدادات"
-        android:textSize="12sp"
-        android:backgroundTint="@color/slate_800"
-        style="@style/Widget.Material3.Button.OutlinedButton" />
 
 </LinearLayout>
