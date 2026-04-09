@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'com.teacher.app'
     compileSdk 34
 
     defaultConfig {
