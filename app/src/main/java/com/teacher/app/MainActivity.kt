@@ -29,8 +29,7 @@ class MainActivity : AppCompatActivity() {
         serverStatusText.text = "✅ الرادار يعمل"
         
         broadcastButton.setOnClickListener {
-            Toast.makeText(this, "📡 جاري بث الدرس...", Toast.LENGTH_SHORT).show()
-            // هنا سيتم إضافة منطق البث
+            Toast.makeText(applicationContext, "📡 جاري بث الدرس...", Toast.LENGTH_SHORT).show()
         }
     }
     
