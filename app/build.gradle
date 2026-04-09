@@ -23,5 +23,5 @@ android {
 }
 
 dependencies {
-    // لا توجد مكتبات إضافية - فقط ما هو مدمج في Android SDK
+    // لا توجد مكتبات - فقط Android SDK
 }
